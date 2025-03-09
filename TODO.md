@@ -14,8 +14,20 @@
     [X] Change Discord social link.
     [ ] Add network's social links.
 [ ] Rebrand:
-    [ ] program_info\ rebranding
+    [X] program_info\ rebranding
     [ ] Use network's logos, icons, etc.
+        [X] majnrujlauncher.ico
+        [ ] majnrujlauncher.icns
+        [ ] majnrujlauncher-monochrome.Source.svg
+        [ ] instance-icons.svg -> Add PrismLauncher logo there.
+        [X] cz.majnruj.MajnrujLauncher.svg
+        [X] cz.majnruj.MajnrujLauncher.Source.svg
+        [X] cz.majnruj.MajnrujLauncher.Social.svg
+        [ ] cz.majnruj.MajnrujLauncher.logo.svg
+        [ ] cz.majnruj.MajnrujLauncher.logo.source.svg
+        [ ] cz.majnruj.MajnrujLauncher.logo-darkmode.svg
+        [X] cz.majnruj.MajnrujLauncher.bigsur.svg
+    [ ] Launcher screenshots
     [X] Update "About App" page.
     [ ] Use network's news source.
     [X] Fetch updates from network's GitHub repo.
