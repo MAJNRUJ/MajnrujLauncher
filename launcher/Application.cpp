@@ -320,7 +320,7 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
         if (DesktopServices::isSnap()) {
             foo = QDir(getenv("SNAP_USER_COMMON"));
         } else {
-            foo = QDir(FS::PathCombine(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation), ".."));
+            foo = QDir(FS::PathCombine(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation), "../../.majnruj"));
         }
 
         dataPath = foo.absolutePath();
@@ -515,6 +515,10 @@ Application::Application(int& argc, char** argv) : QApplication(argc, argv)
             migrated = handleDataMigration(
                 dataPath, FS::PathCombine(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation), "../../multimc"), "MultiMC",
                 "multimc.cfg");
+        if (!migrated)
+            migrated = handleDataMigration(
+                dataPath, FS::PathCombine(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation), "../../PrismLauncher"), "PrismLauncher",
+                "prismlauncher.cfg");
     }
 
     {
