@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>cz.majnruj.MajnrujLauncher</id>
+  <launchable type="desktop-id">cz.majnruj.MajnrujLauncher.desktop</launchable>
+  <name>MAJNRUJ Launcher</name>
+  <developer_name>MAJNRUJ Launcher Contributors</developer_name>
+  <summary>Custom Minecraft Launcher to easily manage multiple Minecraft installations at once</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <url type="homepage">https://majnruj.cz/</url>
+  <url type="help">https://prismlauncher.org/wiki/</url> <!-- Prism Launcher Wiki; No need to change. -->
+  <url type="bugtracker">https://github.com/MAJNRUJ/MajnrujLauncher/issues</url>
+  <url type="contact">https://majnruj.cz/discord</url>
+  <url type="vcs-browser">https://github.com/MAJNRUJ/MajnrujLauncher</url>
+  <url type="contribute">https://github.com/MAJNRUJ/MajnrujLauncher/blob/develop/CONTRIBUTING.md</url>
+  <url type="translate">https://hosted.weblate.org/projects/prismlauncher/launcher</url> <!--- Prism Launcher Translation Project; Another thing we don't need to recreate. -->
+  <description>
+    <p>MAJNRUJ Launcher (which is fork of Prism Launcher) is a custom launcher for Minecraft that focuses on predictability, long term stability, simplicity as well as more convenience related to MAJNRUJ Network.</p>
+    <p>Features:</p>
+    <ul>
+      <li>Easily install game modifications, such as Fabric, Forge and Quilt</li>
+      <li>Easily install and update modpacks from the Launcher</li>
+      <li>Control your Java settings, and enable Mangohud or Gamemode with a toggle</li>
+      <li>Manage worlds and resource packs from the launcher</li>
+      <li>See logs and other details easily through a dashboard</li>
+      <li>Kill Minecraft in case of a crash/freeze</li>
+      <li>Isolate Minecraft instances to keep everything clean</li>
+      <li>Install and update mods directly from the launcher</li>
+      <li>Customize the launcher with themes, and more</li>
+      <li>And cat :3</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The main MAJNRUJ Launcher window</caption>
+      <image type="source" width="1030" height="764">https://prismlauncher.org/img/screenshots/LauncherDark.png</image> <!-- MTODO;TODO: Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Modpack installation</caption>
+      <image type="source" width="1126" height="850">https://prismlauncher.org/img/screenshots/ModpackInstallDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Modpack updating</caption>
+      <image type="source" width="930" height="677">https://prismlauncher.org/img/screenshots/ModpackUpdateDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Mod installation</caption>
+      <image type="source" width="848" height="558">https://prismlauncher.org/img/screenshots/ModInstallDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Mod updating</caption>
+      <image type="source" width="860" height="748">https://prismlauncher.org/img/screenshots/ModUpdateDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Instance management</caption>
+      <image type="source" width="960" height="659">https://prismlauncher.org/img/screenshots/PropertiesDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Cat :3</caption>
+      <image type="source" width="1042" height="754">https://prismlauncher.org/img/screenshots/LauncherCatDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+    <screenshot>
+      <caption>Customization</caption>
+      <image type="source" width="1040" height="752">https://prismlauncher.org/img/screenshots/CustomizeDark.png</image> <!-- MTODO;TODO : Change to Majnruj Launcher screenshot -->
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="@Launcher_VERSION_NAME@" date="@Launcher_BUILD_TIMESTAMP@"></release>
+  </releases>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
+</component>

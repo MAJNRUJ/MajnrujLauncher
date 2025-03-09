@@ -13,24 +13,24 @@ if command -v "inkscape" && command -v "icotool" && command -v "oxipng"; then
     # Windows ICO
     d=$(mktemp -d)
 
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_16.png" 16 16
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_24.png" 24 24
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_32.png" 32 32
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_48.png" 48 48
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_64.png" 64 64
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_128.png" 128 128
-    svg2png org.prismlauncher.PrismLauncher.svg "$d/prismlauncher_256.png" 256 256
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_16.png" 16 16
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_24.png" 24 24
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_32.png" 32 32
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_48.png" 48 48
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_64.png" 64 64
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_128.png" 128 128
+    svg2png cz.majnruj.MajnrujLauncher.svg "$d/majnrujlauncher_256.png" 256 256
 
-    oxipng --opt max --strip all --alpha --interlace 0 "$d/prismlauncher_"*".png"
+    oxipng --opt max --strip all --alpha --interlace 0 "$d/majnrujlauncher_"*".png"
 
-    rm prismlauncher.ico && icotool -o prismlauncher.ico -c \
-        "$d/prismlauncher_256.png"  \
-        "$d/prismlauncher_128.png"  \
-        "$d/prismlauncher_64.png"   \
-        "$d/prismlauncher_48.png"   \
-        "$d/prismlauncher_32.png"   \
-        "$d/prismlauncher_24.png"   \
-        "$d/prismlauncher_16.png"
+    rm majnrujlauncher.ico && icotool -o majnrujlauncher.ico -c \
+        "$d/majnrujlauncher_256.png"  \
+        "$d/majnrujlauncher_128.png"  \
+        "$d/majnrujlauncher_64.png"   \
+        "$d/majnrujlauncher_48.png"   \
+        "$d/majnrujlauncher_32.png"   \
+        "$d/majnrujlauncher_24.png"   \
+        "$d/majnrujlauncher_16.png"
 else
     echo "ERROR: Windows icons were NOT generated!" >&2
     echo "ERROR: requires inkscape, icotool and oxipng in PATH"
@@ -40,19 +40,19 @@ if command -v "inkscape" && command -v "iconutil" && command -v "oxipng"; then
     # macOS ICNS
     d=$(mktemp -d)
 
-    d="$d/prismlauncher.iconset"
+    d="$d/majnrujlauncher.iconset"
 
     mkdir -p "$d"
 
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_16x16.png" 16 16
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_16x16@2.png" 32 32
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_32x32.png" 32 32
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_32x32@2.png" 64 64
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_128x128.png" 128 128
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_128x128@2.png" 256 256
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_256x256.png" 256 256
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_256x256@2.png" 512 512
-    svg2png org.prismlauncher.PrismLauncher.bigsur.svg "$d/icon_512x512@2x.png" 1024 1024
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_16x16.png" 16 16
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_16x16@2.png" 32 32
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_32x32.png" 32 32
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_32x32@2.png" 64 64
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_128x128.png" 128 128
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_128x128@2.png" 256 256
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_256x256.png" 256 256
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_256x256@2.png" 512 512
+    svg2png cz.majnruj.MajnrujLauncher.bigsur.svg "$d/icon_512x512@2x.png" 1024 1024
 
     oxipng --opt max --strip all --alpha --interlace 0 "$d/icon_"*".png"
 
@@ -63,4 +63,4 @@ else
 fi
 
 # replace icon in themes
-cp -v org.prismlauncher.PrismLauncher.svg "../launcher/resources/multimc/scalable/launcher.svg"
+cp -v cz.majnruj.MajnrujLauncher.svg "../launcher/resources/multimc/scalable/launcher.svg"
