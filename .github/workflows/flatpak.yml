@@ -1,23 +1,23 @@
 name: Flatpak
 
 on:
-  push:
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
-      - "nix/**"
-    # We don't do anything with these artifacts on releases. They go to Flathub
-    tags-ignore:
-      - "*"
-  pull_request:
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
-      - "nix/**"
+  #push:
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
+  #    - "nix/**"
+  #  # We don't do anything with these artifacts on releases. They go to Flathub
+  #  tags-ignore:
+  #    - "*"
+  #pull_request:
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
+  #    - "nix/**"
   workflow_dispatch:
 
 permissions:

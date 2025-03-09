@@ -1,20 +1,20 @@
 name: Nix
 
 on:
-  push:
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
-      - "flatpak/**"
-  pull_request_target:
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
-      - "flatpak/**"
+  #push:
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
+  #    - "flatpak/**"
+  #pull_request_target:
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
+  #    - "flatpak/**"
   workflow_dispatch:
 
 permissions:

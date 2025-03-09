@@ -1,10 +1,11 @@
 name: Build Application and Make Release
 
 on:
-  push:
-    tags:
-      - "*"
-
+  #push:
+  #  tags:
+  #    - "*"
+  workflow_dispatch:
+  
 jobs:
   build_release:
     name: Build Release

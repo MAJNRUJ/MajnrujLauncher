@@ -1,24 +1,24 @@
 name: Build Application
 
 on:
-  push:
-    branches-ignore:
-      - "renovate/**"
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - "flake.lock"
-      - "packages/**"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
-  pull_request:
-    paths-ignore:
-      - "**.md"
-      - "**/LICENSE"
-      - "flake.lock"
-      - "packages/**"
-      - ".github/ISSUE_TEMPLATE/**"
-      - ".markdownlint**"
+  #push:
+  #  branches-ignore:
+  #    - "renovate/**"
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - "flake.lock"
+  #    - "packages/**"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
+  #pull_request:
+  #  paths-ignore:
+  #    - "**.md"
+  #    - "**/LICENSE"
+  #    - "flake.lock"
+  #    - "packages/**"
+  #    - ".github/ISSUE_TEMPLATE/**"
+  #    - ".markdownlint**"
   workflow_dispatch:
 
 jobs:
