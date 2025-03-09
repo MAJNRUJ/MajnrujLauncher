@@ -68,7 +68,7 @@ jobs:
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         uses: cachix/cachix-action@v15
         with:
-          name: prismlauncher
+          name: majnrujlauncher
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
       - name: Run Flake checks
@@ -80,11 +80,11 @@ jobs:
         run: |
           nix build \
             --no-link --print-build-logs --print-out-paths \
-            .#prismlauncher-debug >> "$GITHUB_STEP_SUMMARY"
+            .#majnrujlauncher-debug >> "$GITHUB_STEP_SUMMARY"
 
       - name: Build release package
         if: ${{ !env.DEBUG }}
         run: |
           nix build \
             --no-link --print-build-logs --print-out-paths \
-            .#prismlauncher >> "$GITHUB_STEP_SUMMARY"
+            .#majnrujlauncher >> "$GITHUB_STEP_SUMMARY"
