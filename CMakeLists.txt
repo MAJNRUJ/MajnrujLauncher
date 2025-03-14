@@ -268,8 +268,8 @@ set(Launcher_MSA_CLIENT_ID "e7736e53-bbd6-4234-a1a1-da6d275d9f0f" CACHE STRING "
 # By using this key in your builds you accept the terms and conditions laid down in
 # https://support.curseforge.com/en/support/solutions/articles/9000207405-curse-forge-3rd-party-api-terms-and-conditions
 # NOTE: CurseForge requires you to change this if you make any kind of derivative work.
-# This key was issued specifically for Prism Launcher
-set(Launcher_CURSEFORGE_API_KEY "" CACHE STRING "API key for the CurseForge platform") # MTODO;TODO;PRIORITY : Register our own app.
+# This key was issued specifically for MAJNRUJ Launcher
+set(Launcher_CURSEFORGE_API_KEY "$2a$10$6GumL2fk1poXwbg/b.EDReIf0ZtBgqIef6KyvnGQ2jmZTAtVpjNiu" CACHE STRING "API key for the CurseForge platform")
 
 set(Launcher_COMPILER_NAME ${CMAKE_CXX_COMPILER_ID})
 set(Launcher_COMPILER_VERSION ${CMAKE_CXX_COMPILER_VERSION})
