@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>cz.majnruj.MajnrujLauncher</id>
-  <launchable type="desktop-id">cz.majnruj.MajnrujLauncher.desktop</launchable>
+  <id>@Launcher_AppID@</id>
+  <launchable type="desktop-id">@Launcher_AppID@.desktop</launchable>
   <name>MAJNRUJ Launcher</name>
   <developer_name>MAJNRUJ Launcher Contributors</developer_name>
   <summary>Custom Minecraft Launcher to easily manage multiple Minecraft installations at once</summary>
